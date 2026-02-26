@@ -45,3 +45,6 @@ add_test(NAME adas_tests COMMAND adas_tests)
 # ── Simulator ─────────────────────────────────────────────────────────────────
 add_executable(adas_simulator simulator/main.cpp)
 target_link_libraries(adas_simulator adas_lib)
+
+add_executable(adas_live_sim simulator/live_sim.cpp)
+target_link_libraries(adas_live_sim adas_lib)
